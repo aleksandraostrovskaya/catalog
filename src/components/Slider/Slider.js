@@ -21,15 +21,17 @@ export const Slider = ({children}) => {
 
 	function handleLeftClick() {
 		console.log('click')
+		setOffset(prev => prev + PAGE_WIDTH);
 	}
 	function handleRightClick() {
 		console.log('click')
+		setOffset(prev => prev - PAGE_WIDTH);
 	}
 	return (
 		<div className="slider-container">
 			<FaChevronLeft className='arrow' onClick={handleLeftClick}/>
-			<div className="window">
-				<div className="slide-items">
+			<div className="slider-window">
+				<div className="slider-items">
 					{children}
 				</div>
 			</div>

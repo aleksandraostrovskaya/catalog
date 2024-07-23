@@ -7,9 +7,9 @@ export const HomePage = () => {
 		<div>
 			<h1>HomePage</h1>
 			<Slider>
-				<img className='slider-img' src={slide}/>
-				<img  className='slider-img' src={slide}/>
-				<img  className='slider-img' src={slide}/>
+				<img className='slider-img' src={slide} alt=''/>
+				<img className='slider-img' src={slide} alt=''/>
+				<img className='slider-img' src={slide} alt=''/>
 			</Slider>
 		</div>
 	)
