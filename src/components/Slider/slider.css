@@ -1,0 +1,26 @@
+.slide-items{
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+/*slider*/
+.slider-container{
+  height: 150px;
+  width: 1040px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+
+.slider-window{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-items{
+  height: 100%;
+  display: flex;
+}
