@@ -1,0 +1,58 @@
+/* slider.css */
+.slick-prev, .slick-next {
+  display: none !important; /* Скрыть стандартные стрелки */
+}
+
+.custom-arrow {
+  width: 40px;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-color-1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.custom-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.custom-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.custom-arrow img {
+  width: 16px;
+  height: 16px;
+}
+
+
+.slick-dots li {
+  margin: 0 9px; /* Отступ между полосками */
+}
+
+.slick-dots li button {
+  width: 14px;
+  height: 4px;
+  background-color: var(--main-text-color);
+  border: none;
+  padding: 0;
+  opacity: 0.5; 
+  transition: opacity 0.3s; 
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+
+.slick-dots li button:before {
+  display: none;
+}
